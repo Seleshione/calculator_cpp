@@ -10,7 +10,6 @@ find_package(SFML 2.6 COMPONENTS graphics window system REQUIRED)
 add_library(calculator_math src/calculator_math.cpp)
 target_include_directories(calculator_math PUBLIC include)
 
-# Основное приложение
 add_executable(GraphicalCalculator src/main.cpp)
 target_link_libraries(GraphicalCalculator
     sfml-graphics
